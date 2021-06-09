@@ -4,7 +4,7 @@
   "description": "This is web app that grants people loan in other to allieviate poverty.",
   "main": "app.js",
   "scripts": {
-    "start": "set NODE_ENV=production&& npm run migrate&& --timeout 50000 babel-node -- server/app.js",
+    "start": "set NODE_ENV=production&& npm run migrate&& babel-node -- server/app.js",
     "start:dev": "nodemon --watch server --exec babel-node -- server/app.js",
     "postinstall": "babel server -d build",
     "test": "set NODE_ENV=test&& npm run migrate&& nyc --reporter=html --reporter=text mocha --timeout 50000 --exit --require @babel/register ./server/spec/",

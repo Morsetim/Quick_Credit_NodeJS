@@ -13,7 +13,7 @@ var _config = _interopRequireDefault(require("../config/config"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-var env = process.env.NODE_ENV || 'production';
+var env = process.env.NODE_ENV || 'development';
 console.log(env, '===============env');
 var config = _config["default"][env];
 console.log(config, '-------cofig');
