@@ -2,7 +2,7 @@
   "name": "quickcredit",
   "version": "1.0.0",
   "description": "This is web app that grants people loan in other to allieviate poverty.",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "start": "set NODE_ENV=production&& npm run migrate&& babel-node -- server/app.js",
     "start:dev": "nodemon --watch server --exec babel-node -- server/app.js",
